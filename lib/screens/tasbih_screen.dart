@@ -193,7 +193,7 @@ class _TasbihScreenState extends State<TasbihScreen>
       key: _scaffoldKey,
       appBar: AppBar(
         title: const Text(
-          'Islamic Tasbih',
+          'Tasbih',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
@@ -220,20 +220,21 @@ class _TasbihScreenState extends State<TasbihScreen>
           ),
         ),
         child: SafeArea(
-          child: Column(
-            children: [
-              // Dhikr Selector
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: DhikrSelector(
-                  currentItem: _currentCounter.item,
-                  onDhikrSelected: _selectDhikr,
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.only(bottom: 30),
+            child: Column(
+              children: [
+                // Dhikr Selector
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: DhikrSelector(
+                    currentItem: _currentCounter.item,
+                    onDhikrSelected: _selectDhikr,
+                  ),
                 ),
-              ),
 
-              // Counter Display
-              Expanded(
-                child: CounterDisplay(
+                // Counter Display
+                CounterDisplay(
                   counter: _currentCounter,
                   settings: _settings,
                   pulseController: _pulseController,
@@ -241,30 +242,30 @@ class _TasbihScreenState extends State<TasbihScreen>
                   scaleController: _scaleController,
                   onTap: _incrementCounter,
                 ),
-              ),
 
-              // Action Buttons
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    _buildActionButton(
-                      icon: Icons.refresh,
-                      label: 'Reset',
-                      onPressed: _resetCounter,
-                      color: Colors.orange,
-                    ),
-                    _buildActionButton(
-                      icon: Icons.restart_alt,
-                      label: 'Reset All',
-                      onPressed: () => _showResetDialog(),
-                      color: Colors.red,
-                    ),
-                  ],
+                // Action Buttons
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      _buildActionButton(
+                        icon: Icons.refresh,
+                        label: 'Reset',
+                        onPressed: _resetCounter,
+                        color: Colors.orange,
+                      ),
+                      _buildActionButton(
+                        icon: Icons.restart_alt,
+                        label: 'Reset All',
+                        onPressed: () => _showResetDialog(),
+                        color: Colors.red,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

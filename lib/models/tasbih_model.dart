@@ -10,6 +10,21 @@ class TasbihItem {
     required this.translation,
     required this.targetCount,
   });
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    return other is TasbihItem &&
+        other.arabicText == arabicText &&
+        other.transliteration == transliteration &&
+        other.translation == translation &&
+        other.targetCount == targetCount;
+  }
+
+  @override
+  int get hashCode {
+    return Object.hash(arabicText, transliteration, translation, targetCount);
+  }
 }
 
 class TasbihData {

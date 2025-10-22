@@ -39,32 +39,19 @@ class DhikrSelector extends StatelessWidget {
                 ),
                 filled: true,
                 fillColor: Theme.of(context).colorScheme.surface,
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 12,
+                ),
               ),
+              isExpanded: true,
               items: TasbihData.commonDhikr.map((item) {
                 return DropdownMenuItem<TasbihItem>(
                   value: item,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        item.arabicText,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        textDirection: TextDirection.rtl,
-                      ),
-                      Text(
-                        item.transliteration,
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Theme.of(
-                            context,
-                          ).colorScheme.onSurface.withOpacity(0.7),
-                        ),
-                      ),
-                    ],
+                  child: Text(
+                    '${item.arabicText} - ${item.transliteration}',
+                    style: const TextStyle(fontSize: 14),
+                    overflow: TextOverflow.ellipsis,
                   ),
                 );
               }).toList(),

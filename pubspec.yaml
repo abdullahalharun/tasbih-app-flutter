@@ -46,6 +46,7 @@ dependencies:
 
   # For Islamic date formatting
   hijri: ^3.0.0
+  firebase_core: ^4.2.0
 
 dev_dependencies:
   flutter_test:
