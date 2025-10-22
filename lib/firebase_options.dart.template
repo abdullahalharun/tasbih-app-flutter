@@ -41,48 +41,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDjFe56xfI5uaYmfnX0vlVOEqe0rjkWj10',
-    appId: '1:430221940539:web:4caa4ffd05f7ab8758891e',
-    messagingSenderId: '430221940539',
-    projectId: 'tasbih-app-flutter',
-    authDomain: 'tasbih-app-flutter.firebaseapp.com',
-    storageBucket: 'tasbih-app-flutter.firebasestorage.app',
-    measurementId: 'G-4QHHLZZR4B',
+    apiKey: 'YOUR_WEB_API_KEY',
+    appId: 'YOUR_WEB_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
+    storageBucket: 'YOUR_PROJECT_ID.firebasestorage.app',
+    measurementId: 'YOUR_MEASUREMENT_ID',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCieObgOoDC-70u0B7rbnpTo3PPxPBsc2A',
-    appId: '1:430221940539:android:12c97d317918620958891e',
-    messagingSenderId: '430221940539',
-    projectId: 'tasbih-app-flutter',
-    storageBucket: 'tasbih-app-flutter.firebasestorage.app',
+    apiKey: 'YOUR_ANDROID_API_KEY',
+    appId: 'YOUR_ANDROID_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_PROJECT_ID.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC1bRIwd1k2lU_nroI4wW9VMSPBZM99yKM',
-    appId: '1:430221940539:ios:43105ce9a844a2ad58891e',
-    messagingSenderId: '430221940539',
-    projectId: 'tasbih-app-flutter',
-    storageBucket: 'tasbih-app-flutter.firebasestorage.app',
-    iosBundleId: 'com.example.moneyManagementFlutter',
+    apiKey: 'YOUR_IOS_API_KEY',
+    appId: 'YOUR_IOS_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_PROJECT_ID.firebasestorage.app',
+    iosBundleId: 'YOUR_IOS_BUNDLE_ID',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC1bRIwd1k2lU_nroI4wW9VMSPBZM99yKM',
-    appId: '1:430221940539:ios:43105ce9a844a2ad58891e',
-    messagingSenderId: '430221940539',
-    projectId: 'tasbih-app-flutter',
-    storageBucket: 'tasbih-app-flutter.firebasestorage.app',
-    iosBundleId: 'com.example.moneyManagementFlutter',
+    apiKey: 'YOUR_MACOS_API_KEY',
+    appId: 'YOUR_MACOS_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_PROJECT_ID.firebasestorage.app',
+    iosBundleId: 'YOUR_MACOS_BUNDLE_ID',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDjFe56xfI5uaYmfnX0vlVOEqe0rjkWj10',
-    appId: '1:430221940539:web:23a0e54358c3baa358891e',
-    messagingSenderId: '430221940539',
-    projectId: 'tasbih-app-flutter',
-    authDomain: 'tasbih-app-flutter.firebaseapp.com',
-    storageBucket: 'tasbih-app-flutter.firebasestorage.app',
-    measurementId: 'G-J9BW7RYRHN',
+    apiKey: 'YOUR_WINDOWS_API_KEY',
+    appId: 'YOUR_WINDOWS_APP_ID',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+    projectId: 'YOUR_PROJECT_ID',
+    authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
+    storageBucket: 'YOUR_PROJECT_ID.firebasestorage.app',
+    measurementId: 'YOUR_WINDOWS_MEASUREMENT_ID',
   );
 }
